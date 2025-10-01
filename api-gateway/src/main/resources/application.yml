@@ -13,6 +13,7 @@ spring:
           filters:
             - StripPrefix=2
 #            - RedirectTo=302, https://github.com/shah8375033
+            - name: LoggingOrdersFilter
         - id: inventory-service
           uri: lb://INVENTORY-SERVICE
           predicates:
